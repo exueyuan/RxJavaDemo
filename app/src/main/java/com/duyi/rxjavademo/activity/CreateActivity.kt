@@ -110,6 +110,9 @@ class CreateActivity : AppCompatActivity() {
                 .subscribe { s -> Log.d(com.duyi.rxjavademo.TAG, "================accept $s") }
         }
 
+        /**
+         * 从序列化开始
+         */
         bt_from_iterable.setOnClickListener {
             val list = ArrayList<Int>()
             list.add(0)
