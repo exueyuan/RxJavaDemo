@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button android:id="@+id/bt_concat"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.1-concat"/>
+    <Button android:id="@+id/bt_concatArray"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.2-concatArray"/>
+    <Button android:id="@+id/bt_merge"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.3-merge"/>
+    <Button android:id="@+id/bt_concatArrayDelayError"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.4-concatArrayDelayError"/>
+    <Button android:id="@+id/bt_zip"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.5-zip"/>
+    <Button android:id="@+id/bt_combineLatest_combineLatestDelayError"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.6-combineLatest_combineLatestDelayError"/>
+    <Button android:id="@+id/bt_reduce"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.7-reduce"/>
+
+    <Button android:id="@+id/bt_collect"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.8-collect"/>
+    <Button android:id="@+id/bt_startWith_startWithArray"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.9-startWith()_startWithArray()"/>
+    <Button android:id="@+id/bt_count"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.10-count"/>
+</LinearLayout>

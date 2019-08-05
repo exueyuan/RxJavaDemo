@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button android:id="@+id/bt_create"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.1-create()"/>
+
+    <Button android:id="@+id/bt_just"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.2-just()"/>
+
+
+    <Button android:id="@+id/bt_from_array"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.3.1-fromArray()"/>
+
+
+    <Button android:id="@+id/bt_from_callable"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.3.2-fromCallable()"/>
+
+    <Button android:id="@+id/bt_from_future"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.3.3-fromFuture()"/>
+
+
+    <Button android:id="@+id/bt_from_iterable"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.3.4-fromIterable()"/>
+
+    <Button android:id="@+id/bt_defer"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.4-defer()"/>
+
+    <Button android:id="@+id/bt_timer"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.5-timer()"/>
+
+
+    <Button android:id="@+id/bt_interval"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.6-interval()"/>
+
+    <Button android:id="@+id/bt_interval_range"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.7-intervalRange()"/>
+
+    <Button android:id="@+id/bt_range"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.8-range()"/>
+
+
+    <Button android:id="@+id/bt_rangeLong"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.9-rangeLong()"/>
+
+    <Button android:id="@+id/bt_empty_never_error"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="1.10-empty(),never(),error()"/>
+</LinearLayout>

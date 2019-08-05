@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Button android:id="@+id/bt_delay"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.1-delay"/>
+        <Button android:id="@+id/bt_doOnEach"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.2-doOnEach"/>
+        <Button android:id="@+id/bt_doOnNext"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.3-doOnNext"/>
+        <Button android:id="@+id/bt_doAfterNext"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.4-doAfterNext"/>
+        <Button android:id="@+id/bt_doOnComplete"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.5-doOnComplete"/>
+        <Button android:id="@+id/bt_doOnError"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.6-doOnError"/>
+        <Button android:id="@+id/bt_doOnSubscribe"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.7-doOnSubscribe"/>
+        <Button android:id="@+id/bt_doOnDispose"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.8-doOnDispose"/>
+        <Button android:id="@+id/bt_doOnLifecycle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.9-doOnLifecycle"/>
+        <Button android:id="@+id/bt_doOnTerminate_doAfterTerminate"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.10-doOnTerminate()_doAfterTerminate()"/>
+        <Button android:id="@+id/bt_doFinally"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.11-doFinally"/>
+        <Button android:id="@+id/bt_onErrorReturn"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.12-onErrorReturn"/>
+        <Button android:id="@+id/bt_onErrorResumeNext"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.13-onErrorResumeNext"/>
+        <Button android:id="@+id/bt_onExceptionResumeNext"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.14-onExceptionResumeNext"/>
+        <Button android:id="@+id/bt_retry"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.15-retry"/>
+        <Button android:id="@+id/bt_retryUtil"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.16-retryUtil"/>
+        <Button android:id="@+id/bt_retryWhen"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.17-retryWhen"/>
+        <Button android:id="@+id/bt_repeat"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.18-repeat"/>
+        <Button android:id="@+id/bt_repeatWhen"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.19-repeatWhen"/>
+        <Button android:id="@+id/bt_subscribeOn"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.20-subscribeOn"/>
+        <Button android:id="@+id/bt_observeOn"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="4.21-observeOn"/>
+
+    </LinearLayout>
+</ScrollView>

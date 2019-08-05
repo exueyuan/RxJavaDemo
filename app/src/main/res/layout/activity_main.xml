@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+            android:id="@+id/bt_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0-基础形式"/>
+    <Button
+            android:id="@+id/bt_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1-创建操作符"/>
+    <Button
+            android:id="@+id/bt_transform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2-转换操作符"/>
+    <Button
+            android:id="@+id/bt_combination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3-组合操作符"/>
+    <Button
+            android:id="@+id/bt_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4-功能操作符"/>
+    <Button
+            android:id="@+id/bt_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5-过滤操作符"/>
+    <Button
+            android:id="@+id/bt_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6-条件操作符"/>
+</LinearLayout>
