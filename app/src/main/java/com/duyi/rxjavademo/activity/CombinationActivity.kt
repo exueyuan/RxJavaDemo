@@ -233,6 +233,32 @@ class CombinationActivity : AppCompatActivity() {
                 })
         }
 
+        bt_zip_with.setOnClickListener {
+            Observable.just(1, 2, 3)
+                .zipWith(Observable.just("ha","la"),object : BiFunction<Int, String, String> {
+                    override fun apply(s: Int, s2: String): String {
+                        return ""+s + s2
+                    }
+                })
+                .subscribe(object : Observer<String> {
+                    override fun onSubscribe(d: Disposable) {
+                        Log.d(com.duyi.rxjavademo.TAG, "=================onSubscribe")
+                    }
+
+                    override fun onNext(str: String) {
+                        Log.d(com.duyi.rxjavademo.TAG, "=================onNext $str")
+                    }
+
+                    override fun onError(e: Throwable) {
+                        Log.d(com.duyi.rxjavademo.TAG, "=================onError ")
+                    }
+
+                    override fun onComplete() {
+                        Log.d(com.duyi.rxjavademo.TAG, "=================onComplete ")
+                    }
+                })
+        }
+
         /**
          * combineLatest() 的作用与 zip() 类似，但是 combineLatest() 发送事件
          * 的序列是与发送的时间线有关的，当 combineLatest() 中所有的 Observable 都发

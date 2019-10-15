@@ -25,6 +25,11 @@
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:text="3.5-zip"/>
+
+    <Button android:id="@+id/bt_zip_with"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="3.5.1-zipWith"/>
     <Button android:id="@+id/bt_combineLatest_combineLatestDelayError"
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAllCaps="false"
