@@ -1,5 +1,6 @@
 package com.duyi.rxjavademo.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
@@ -15,11 +16,8 @@ import kotlinx.android.synthetic.main.activity_function.*
 import java.util.concurrent.TimeUnit
 
 
-
-
-
-
 class FunctionActivity : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(com.duyi.rxjavademo.R.layout.activity_function)
@@ -97,7 +95,12 @@ class FunctionActivity : AppCompatActivity() {
                 e.onNext(3)
                 e.onComplete()
             })
-                .doOnNext { integer -> Log.d(TAG, "==================doOnNext " + integer!!) }
+                .doOnNext { integer ->
+                    Log.d(TAG, "==================doOnNext " + integer!!)
+                }
+                .doOnNext { integer ->
+                    Log.d(TAG, "==================doOnNext2 " + integer!!)
+                }
                 .subscribe(object : Observer<Int> {
                     override fun onSubscribe(d: Disposable) {
                         Log.d(TAG, "==================onSubscribe ")
@@ -644,7 +647,7 @@ class FunctionActivity : AppCompatActivity() {
                 e.onNext(2)
                 e.onNext(3)
                 e.onComplete()
-            }).repeatWhen (object:Function<Observable<Any>,ObservableSource<Any>>{
+            }).repeatWhen(object : Function<Observable<Any>, ObservableSource<Any>> {
                 override fun apply(t: Observable<Any>): ObservableSource<Any> {
                     return Observable.empty()
                     //  return Observable.error(new Exception("404"));
